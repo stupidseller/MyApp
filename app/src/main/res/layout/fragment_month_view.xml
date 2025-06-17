@@ -140,4 +140,4 @@
         android:src="@android:drawable/ic_input_add"
         app:fabSize="normal" />
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout> 
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

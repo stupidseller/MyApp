@@ -1,7 +1,27 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 夜间模式基类主题 -->
     <style name="Base.Theme.MyApplication" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <!-- 保持相同的主色 -->
+        <item name="colorPrimary">@color/BITgreen</item>
+        <item name="android:colorButtonNormal">@color/BITgreen</item>
+
+        <!-- 夜间模式文本颜色 (浅色) -->
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+    <!-- 按钮样式继承日间定义 -->
+    <style name="MyApp.ButtonStyle" parent="Widget.AppCompat.Button">
+        <!-- 保持相同的按钮颜色 -->
+        <item name="android:backgroundTint">@color/BITgreen</item>
+        <!-- 按钮文字保持白色 (在绿色背景上始终可见) -->
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- 应用主题 -->
+    <style name="Theme.MyApplication" parent="Base.Theme.MyApplication">
+        <item name="buttonStyle">@style/MyApp.ButtonStyle</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
     </style>
 </resources>

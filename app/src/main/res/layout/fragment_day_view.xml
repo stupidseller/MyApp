@@ -14,17 +14,17 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_marginBottom="8dp"
             android:gravity="center_vertical"
-            android:layout_marginBottom="8dp">
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/dayPrevBtn"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:padding="0dp"
                 android:text="&lt;"
-                android:textSize="16sp"
-                android:padding="0dp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/dateText"
@@ -39,17 +39,17 @@
                 android:id="@+id/dayNextBtn"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:padding="0dp"
                 android:text="&gt;"
-                android:textSize="16sp"
-                android:padding="0dp" />
+                android:textSize="16sp" />
 
             <Button
                 android:id="@+id/dayTodayBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
                 android:text="今天"
-                android:textSize="14sp"
-                android:layout_marginStart="8dp" />
+                android:textSize="14sp" />
         </LinearLayout>
 
         <ScrollView
